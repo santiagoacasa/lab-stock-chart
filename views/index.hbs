@@ -1,0 +1,22 @@
+<h1>Stock Chart</h1>
+
+
+<form action="/" method="POST">
+  <input type="text" name="empresa" placeholder="Buscar nueva empresa...">
+  <input type="submit" value="Añadir">
+</form>
+
+
+<div class="row">
+  
+    {{#each empresas}}
+    <div class="col-md-6">
+    <canvas id="{{symbolName}}"></canvas>
+    </div>  
+    {{/each}}
+  
+</div>
+
+
+
+
